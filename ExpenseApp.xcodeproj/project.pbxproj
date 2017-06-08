@@ -13,6 +13,7 @@
 		1752FC911EE8DEC700AFE388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1752FC901EE8DEC700AFE388 /* Assets.xcassets */; };
 		1752FC9F1EE8DEC700AFE388 /* ExpenseAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1752FC9E1EE8DEC700AFE388 /* ExpenseAppTests.swift */; };
 		1752FCAA1EE8DEC700AFE388 /* ExpenseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1752FCA91EE8DEC700AFE388 /* ExpenseAppUITests.swift */; };
+		1752FCB81EE8EBE500AFE388 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1752FCB71EE8EBE500AFE388 /* AddExpenseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		1752FCA51EE8DEC700AFE388 /* ExpenseAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1752FCA91EE8DEC700AFE388 /* ExpenseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseAppUITests.swift; sourceTree = "<group>"; };
 		1752FCAB1EE8DEC700AFE388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1752FCB71EE8EBE500AFE388 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				1752FC8D1EE8DEC700AFE388 /* Main.storyboard */,
 				1752FC901EE8DEC700AFE388 /* Assets.xcassets */,
 				1752FC951EE8DEC700AFE388 /* Info.plist */,
+				1752FCB71EE8EBE500AFE388 /* AddExpenseViewController.swift */,
 			);
 			path = ExpenseApp;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1752FC8C1EE8DEC700AFE388 /* ViewController.swift in Sources */,
+				1752FCB81EE8EBE500AFE388 /* AddExpenseViewController.swift in Sources */,
 				1752FC8A1EE8DEC700AFE388 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
