@@ -14,6 +14,7 @@
 		1752FC9F1EE8DEC700AFE388 /* ExpenseAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1752FC9E1EE8DEC700AFE388 /* ExpenseAppTests.swift */; };
 		1752FCAA1EE8DEC700AFE388 /* ExpenseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1752FCA91EE8DEC700AFE388 /* ExpenseAppUITests.swift */; };
 		1752FCB81EE8EBE500AFE388 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1752FCB71EE8EBE500AFE388 /* AddExpenseViewController.swift */; };
+		F2316C581EFB6B0500977FD4 /* DailyExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2316C571EFB6B0500977FD4 /* DailyExpenseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1752FCA91EE8DEC700AFE388 /* ExpenseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseAppUITests.swift; sourceTree = "<group>"; };
 		1752FCAB1EE8DEC700AFE388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1752FCB71EE8EBE500AFE388 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
+		F2316C571EFB6B0500977FD4 /* DailyExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyExpenseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				1752FC901EE8DEC700AFE388 /* Assets.xcassets */,
 				1752FC951EE8DEC700AFE388 /* Info.plist */,
 				1752FCB71EE8EBE500AFE388 /* AddExpenseViewController.swift */,
+				F2316C571EFB6B0500977FD4 /* DailyExpenseViewController.swift */,
 			);
 			path = ExpenseApp;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				1752FC8C1EE8DEC700AFE388 /* ViewController.swift in Sources */,
 				1752FCB81EE8EBE500AFE388 /* AddExpenseViewController.swift in Sources */,
+				F2316C581EFB6B0500977FD4 /* DailyExpenseViewController.swift in Sources */,
 				1752FC8A1EE8DEC700AFE388 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +503,7 @@
 				1752FCB01EE8DEC700AFE388 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1752FCB11EE8DEC700AFE388 /* Build configuration list for PBXNativeTarget "ExpenseAppTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +512,7 @@
 				1752FCB31EE8DEC700AFE388 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1752FCB41EE8DEC700AFE388 /* Build configuration list for PBXNativeTarget "ExpenseAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +521,7 @@
 				1752FCB61EE8DEC700AFE388 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

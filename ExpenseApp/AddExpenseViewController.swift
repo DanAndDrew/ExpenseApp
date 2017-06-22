@@ -11,15 +11,12 @@ import UIKit
 class AddExpenseViewController: UIViewController {
 
     
+    @IBOutlet weak var expenseAmount: UITextField!
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func addExpense(_ sender: UIButton) {
+        
+        self.dismiss(animated: true, completion: nil)
     }
-    */
 
 }

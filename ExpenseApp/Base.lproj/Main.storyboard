@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G12b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jmg-1d-hTa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jmg-1d-hTa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ans-1p-VYS" id="Mh8-sc-p4B">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -42,7 +42,7 @@
         <!--Daily Expenses-->
         <scene sceneID="qxy-s4-spY">
             <objects>
-                <viewController title="Daily Expenses" id="JAK-5W-wvQ" sceneMemberID="viewController">
+                <viewController title="Daily Expenses" id="JAK-5W-wvQ" customClass="DailyExpenseViewController" customModule="ExpenseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="A8L-nT-VKB"/>
                         <viewControllerLayoutGuide type="bottom" id="qNW-IT-RjO"/>
@@ -70,7 +70,7 @@
                     <navigationItem key="navigationItem" title="Daily Expenses" id="IeQ-Zq-Oew">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="EuP-cY-r2D">
                             <connections>
-                                <segue destination="IuD-wF-QsY" kind="popoverPresentation" popoverAnchorBarButtonItem="EuP-cY-r2D" id="MP7-Rp-8Df">
+                                <segue destination="IuD-wF-QsY" kind="popoverPresentation" identifier="addExpenseSegue" popoverAnchorBarButtonItem="EuP-cY-r2D" id="MP7-Rp-8Df">
                                     <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                 </segue>
                             </connections>
@@ -81,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="1090.4000000000001" y="-360.2698650674663"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Expense View Controller-->
         <scene sceneID="qvL-ui-twE">
             <objects>
-                <viewController id="IuD-wF-QsY" sceneMemberID="viewController">
+                <viewController id="IuD-wF-QsY" customClass="AddExpenseViewController" customModule="ExpenseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="n9J-sy-awb"/>
                         <viewControllerLayoutGuide type="bottom" id="EhJ-27-O9c"/>
@@ -93,20 +93,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Andrew's view for adding expense" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MK0-nM-7dh">
-                                <rect key="frame" x="56" y="323" width="262" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BuR-Ft-1X1">
+                                <rect key="frame" x="125" y="396" width="125" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Add Expense"/>
+                                <connections>
+                                    <action selector="addExpense:" destination="IuD-wF-QsY" eventType="touchUpInside" id="QHM-mB-h0g"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ly-qV-jsK">
+                                <rect key="frame" x="111" y="242" width="152" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="expenseAmount" destination="2ly-qV-jsK" id="tb4-83-e1A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="krj-s2-gG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1926" y="-360"/>
+            <point key="canvasLocation" x="1925.5999999999999" y="-360.2698650674663"/>
         </scene>
         <!--Today-->
         <scene sceneID="ojB-gl-uzs">
