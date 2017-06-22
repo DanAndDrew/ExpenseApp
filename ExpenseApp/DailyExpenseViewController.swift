@@ -8,10 +8,14 @@
 
 import UIKit
 
-class DailyExpenseViewController: UIViewController, UIPopoverPresentationControllerDelegate {
+class DailyExpenseViewController: UIViewController, PopoverDelegate {
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! AddExpenseViewController
+        vc.popoverDelegate = self
+    }
     
-    func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
-        print("dismissed successfully")
+    func popoverDismissed() {
+        print("dismissed")
     }
 }

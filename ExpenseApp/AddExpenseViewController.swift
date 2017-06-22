@@ -10,13 +10,17 @@ import UIKit
 
 class AddExpenseViewController: UIViewController {
 
+    var popoverDelegate: PopoverDelegate?
     
     @IBOutlet weak var expenseAmount: UITextField!
 
-
     @IBAction func addExpense(_ sender: UIButton) {
-        
-        self.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
+        popoverDelegate?.popoverDismissed()
     }
 
+}
+
+protocol PopoverDelegate {
+    func popoverDismissed()
 }

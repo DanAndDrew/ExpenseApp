@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1752FC8A1EE8DEC700AFE388 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1752FC891EE8DEC700AFE388 /* AppDelegate.swift */; };
-		1752FC8C1EE8DEC700AFE388 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1752FC8B1EE8DEC700AFE388 /* ViewController.swift */; };
 		1752FC8F1EE8DEC700AFE388 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1752FC8D1EE8DEC700AFE388 /* Main.storyboard */; };
 		1752FC911EE8DEC700AFE388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1752FC901EE8DEC700AFE388 /* Assets.xcassets */; };
 		1752FC9F1EE8DEC700AFE388 /* ExpenseAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1752FC9E1EE8DEC700AFE388 /* ExpenseAppTests.swift */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		1752FC861EE8DEC600AFE388 /* ExpenseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1752FC891EE8DEC700AFE388 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1752FC8B1EE8DEC700AFE388 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1752FC8E1EE8DEC700AFE388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1752FC901EE8DEC700AFE388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1752FC951EE8DEC700AFE388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,12 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				1752FC891EE8DEC700AFE388 /* AppDelegate.swift */,
-				1752FC8B1EE8DEC700AFE388 /* ViewController.swift */,
+				F2316C571EFB6B0500977FD4 /* DailyExpenseViewController.swift */,
+				1752FCB71EE8EBE500AFE388 /* AddExpenseViewController.swift */,
 				1752FC8D1EE8DEC700AFE388 /* Main.storyboard */,
 				1752FC901EE8DEC700AFE388 /* Assets.xcassets */,
 				1752FC951EE8DEC700AFE388 /* Info.plist */,
-				1752FCB71EE8EBE500AFE388 /* AddExpenseViewController.swift */,
-				F2316C571EFB6B0500977FD4 /* DailyExpenseViewController.swift */,
 			);
 			path = ExpenseApp;
 			sourceTree = "<group>";
@@ -261,7 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1752FC8C1EE8DEC700AFE388 /* ViewController.swift in Sources */,
 				1752FCB81EE8EBE500AFE388 /* AddExpenseViewController.swift in Sources */,
 				F2316C581EFB6B0500977FD4 /* DailyExpenseViewController.swift in Sources */,
 				1752FC8A1EE8DEC700AFE388 /* AppDelegate.swift in Sources */,
