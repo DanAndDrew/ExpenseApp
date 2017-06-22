@@ -15,7 +15,7 @@ class DailyExpenseViewController: UIViewController, PopoverDelegate {
         vc.popoverDelegate = self
     }
     
-    func popoverDismissed() {
-        print("dismissed")
+    func popoverDismissed(expenseAmount: Double) {
+        print(expenseAmount)
     }
 }

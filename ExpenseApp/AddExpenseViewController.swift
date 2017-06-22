@@ -16,11 +16,11 @@ class AddExpenseViewController: UIViewController {
 
     @IBAction func addExpense(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
-        popoverDelegate?.popoverDismissed()
+        popoverDelegate?.popoverDismissed(expenseAmount: Double(expenseAmount.text!)!)
     }
 
 }
 
 protocol PopoverDelegate {
-    func popoverDismissed()
+    func popoverDismissed(expenseAmount: Double)
 }
